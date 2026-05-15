@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>World Cup Competition Entry</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 40px;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #222;
+    }
+
+    label {
+      display: block;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    button {
+      margin-top: 30px;
+      width: 100%;
+      padding: 15px;
+      background: #009739;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #007d2f;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>World Cup Competition Entry</h1>
+
+  <form action="https://formsubmit.co/YOUR_EMAIL@example.com" method="POST">
+
+    <!-- Prevent spam -->
+    <input type="hidden" name="_captcha" value="false">
+
+    <!-- Email subject -->
+    <input type="hidden" name="_subject" value="New World Cup Entry!">
+
+    <!-- Redirect after submit -->
+    <input type="hidden" name="_next" value="https://yourwebsite.com/thankyou.html">
+
+    <label>Full Name</label>
+    <input type="text" name="Name" required>
+
+    <label>Email Address</label>
+    <input type="email" name="Email" required>
+
+    <!-- Dropdown 1 -->
+    <label>Winner Prediction</label>
+    <select name="Winner Prediction" required>
+      <option value="">Select Team</option>
+      <option>England</option>
+      <option>Brazil</option>
+      <option>France</option>
+      <option>Argentina</option>
+      <option>Germany</option>
+      <option>Spain</option>
+    </select>
+
+    <!-- Dropdown 2 -->
+    <label>Golden Boot Winner</label>
+    <select name="Golden Boot Winner" required>
+      <option value="">Select Player</option>
+      <option>Harry Kane</option>
+      <option>Kylian Mbappe</option>
+      <option>Vinicius Jr</option>
+      <option>Lionel Messi</option>
+    </select>
+
+    <!-- Dropdown 3 -->
+    <label>Best Young Player</label>
+    <select name="Best Young Player" required>
+      <option value="">Select Player</option>
+      <option>Jude Bellingham</option>
+      <option>Pedri</option>
+      <option>Musiala</option>
+      <option>Gavi</option>
+    </select>
+
+    <!-- Dropdown 4 -->
+    <label>Top Goalkeeper</label>
+    <select name="Top Goalkeeper" required>
+      <option value="">Select Goalkeeper</option>
+      <option>Pickford</option>
+      <option>Alisson</option>
+      <option>Martinez</option>
+      <option>Ter Stegen</option>
+    </select>
+
+    <!-- Question 1 -->
+    <label>How many goals will England score?</label>
+    <input type="number" name="England Goals" required>
+
+    <!-- Question 2 -->
+    <label>Who will score the first goal of the tournament?</label>
+    <input type="text" name="First Goal Scorer" required>
+
+    <!-- Question 3 -->
+    <label>Tie-break Question: Total tournament goals?</label>
+    <input type="number" name="Tournament Goals" required>
+
+    <button type="submit">Submit Entry</button>
+
+  </form>
+</div>
+
+</body>
+</html>
